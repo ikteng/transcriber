@@ -1,0 +1,97 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #eef2f7;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.transcriber-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #222;
+}
+
+.file-input {
+  display: none;
+}
+
+.drop-zone {
+  border: 2px dashed #bbb;
+  border-radius: 12px;
+  padding: 40px;
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.drop-zone.active {
+  border-color: #007bff;
+  background: #e6f0ff;
+  color: #007bff;
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.status.loading {
+  color: #333;
+}
+
+.transcription-output {
+  margin-top: 25px;
+  text-align: left;
+  background: #f0f2f5;
+  padding: 20px;
+  border-radius: 14px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.transcription-output h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.transcription-output pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  font-family: inherit;
+  color: #111;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .transcriber-card {
+    padding: 25px 20px;
+  }
+
+  .drop-zone {
+    padding: 30px;
+  }
+}
